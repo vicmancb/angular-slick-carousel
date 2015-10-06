@@ -97,7 +97,7 @@ angular
               easing: scope.easing || 'linear',
               edgeFriction: scope.edgeFriction || 0.15,
               infinite: scope.infinite !== 'false',
-              initialSlide: scope.initialSlide || 0,
+              initialSlide:  scope.initialSlide? parseInt(scope.initialSlide, 10) : 0,
               lazyLoad: scope.lazyLoad || 'ondemand',
               mobileFirst: scope.mobileFirst === 'true',
               pauseOnHover: scope.pauseOnHover !== 'false',
